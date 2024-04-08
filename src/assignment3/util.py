@@ -4,7 +4,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import datediff, expr, col, to_date
 from pyspark.sql.types import StructType, StructField, IntegerType, StringType, TimestampType
 
-
+#
 def spark_session():
     spark = SparkSession.builder.appName('spark-assignment').getOrCreate()
     return spark
