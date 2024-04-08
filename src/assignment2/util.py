@@ -44,3 +44,4 @@ def mask_card_numbers(df):
 
     hide_udf = udf(hide, StringType())
     return df.withColumn("masked_card_number", hide_udf(df["card_number"]))
+#
