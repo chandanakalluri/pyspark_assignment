@@ -107,3 +107,4 @@ def column_to_lower(dataframe):
     for column in dataframe.columns:
         dataframe = dataframe.withColumnRenamed(column, column.lower())
     return dataframe
+#
