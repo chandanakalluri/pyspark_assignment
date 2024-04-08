@@ -44,4 +44,4 @@ def upgraded_customers():
     count3=purchase_data_df.filter(purchase_data_df["product_model"]=="iphone14").select("customer")#fetching only iphone14 customers
     res2=coun.intersect(count3).alias("upgraded_customers")
     return res2
-
+#
